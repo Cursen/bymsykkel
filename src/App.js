@@ -89,12 +89,18 @@ const App = () => {
         []
     );
   }
+  //This function handles all logic related rendering all the stations with their information.
   function renderStations(){
+    //take each station out of the map and put them into an array,
+    //i could not figure out a way for react to loop over maps within a decent timeframe.
+    // perhaps iterating from entries could work.
     const stationsList = [];
     stations.forEach(function(val){
       stationsList.push(val);
     });
-    const numPages = Math.ceil(stationsList.length/numPerPage);
+    //calculate the amount of pages to insert in the paging element
+    const numPages = Math.floor(stationsList.length/numPerPage);
+    //https://react-bootstrap.netlify.app/components/pagination/#pagination
     let items = [];
     for (let number = 1; number <= numPages; number++) {
       items.push(
@@ -103,16 +109,15 @@ const App = () => {
           </Pagination.Item>
       );
     }
-    console.log(numPages);
+    //split the station array into a chunk too show on each page.
     let pageChunks = splitArray(stationsList,numPerPage);
-    console.log(pageChunks);
     return(
         <div className="App">
             <Container fluid>
-              <div>
+              <div className="PagerBackground">
                 <Row>
                 {items.map(page => (
-                    <Pagination>{page}</Pagination>
+                    <Pagination className="Pager" size="sm">{page}</Pagination>
                 ))}
                 </Row>
               </div>
@@ -135,8 +140,6 @@ const App = () => {
   //You could also do return({stations.size>0?<Station /> : <p>Loading..</p>}),
   // however i personally prefer the use of basic if else in terms of code structure.
   if(stations.size>0) {
-    //Unexpected complexity arose from directly attempting to use a Map object within this render function, so
-    //a Array is created from it as a fix.
     return (
         renderStations()
     )

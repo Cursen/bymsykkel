@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6015b55e-4a8c-4acf-b883-d33ded856e9c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationComponents/Station.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/StationComponents/Station.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationComponents/StationModal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationComponents/StationModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/StationComponents/StationModal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <workItem from="1598992818753" duration="6000" />
       <workItem from="1598992849643" duration="14176000" />
       <workItem from="1599035912693" duration="4764000" />
-      <workItem from="1599062678104" duration="12045000" />
+      <workItem from="1599062678104" duration="15710000" />
     </task>
     <servers />
   </component>
@@ -116,38 +120,42 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="183" key="#ESLint/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1598974184828" />
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599007674144">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599081113504">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599007674144" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599081113504" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1599002982669">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599002982669" />
-    <state width="1899" height="287" key="GridCell.Tab.0.bottom" timestamp="1599070946152">
+    <state width="1899" height="287" key="GridCell.Tab.0.bottom" timestamp="1599082152125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599070946152" />
-    <state width="1899" height="287" key="GridCell.Tab.0.center" timestamp="1599070946152">
+    <state width="1899" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599082152125" />
+    <state width="1899" height="287" key="GridCell.Tab.0.center" timestamp="1599082152125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="287" key="GridCell.Tab.0.center/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599070946152" />
-    <state width="1899" height="287" key="GridCell.Tab.0.left" timestamp="1599070946152">
+    <state width="1899" height="287" key="GridCell.Tab.0.center/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599082152125" />
+    <state width="1899" height="287" key="GridCell.Tab.0.left" timestamp="1599082152125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="287" key="GridCell.Tab.0.left/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599070946152" />
-    <state width="1899" height="287" key="GridCell.Tab.0.right" timestamp="1599070946152">
+    <state width="1899" height="287" key="GridCell.Tab.0.left/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599082152125" />
+    <state width="1899" height="287" key="GridCell.Tab.0.right" timestamp="1599082152125">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="287" key="GridCell.Tab.0.right/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599070946152" />
+    <state width="1899" height="287" key="GridCell.Tab.0.right/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599082152125" />
     <state x="656" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1599062678184">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="656" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599062678184" />
-    <state x="1338" y="261" width="1441" height="724" key="dock-window-1" timestamp="1598957123800">
+    <state x="2873" y="0" width="974" height="1087" key="dock-window-1" timestamp="1599081327007">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1338" y="261" width="1441" height="724" key="dock-window-1/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1598957123800" />
+    <state x="2873" y="0" width="974" height="1087" key="dock-window-1/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599081327007" />
+    <state x="3002" y="0" width="845" height="1087" key="dock-window-2" timestamp="1599082182997">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3002" y="0" width="845" height="1087" key="dock-window-2/0.0.1920.1050/-2560.-360.2560.1440/1920.0.1920.1080@0.0.1920.1050" timestamp="1599082182997" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1598998935062">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -1,5 +1,4 @@
 import React from 'react';
-import './StationModal.css';
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
 import {Bicycle, ConeStriped} from "react-bootstrap-icons";
@@ -8,7 +7,6 @@ import {Bicycle, ConeStriped} from "react-bootstrap-icons";
 //Do note that this throws a deprecated warning, however that is from the react-bootstrap modal itself.
 const StationModal = props => {
     //Code related to adapting the messages shown on component based on props values
-    //TODO Remove the associated code duplication from Station.js
     let message="";
     let rentMessage=""+props.num_bikes_available + " Ledige Sykler";
     let parkMessage=props.num_docks_available +" Ledige Plasser";
@@ -25,13 +23,13 @@ const StationModal = props => {
         rentMessage = "Ingen ledige Sykler";
     }
     return (
-        <>
+        <div>
             <Modal show={props.show} onHide={props.passFunction}>
                 <Modal.Header closeButton>
                     <Modal.Title>{props.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Bicycle/><p>{rentMessage}</p>
+                    <Bicycle/><p >{rentMessage}</p>
                     <ConeStriped/><p>{parkMessage}</p>
                     <p>{message}</p>
                 </Modal.Body>
@@ -41,7 +39,7 @@ const StationModal = props => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-        </>
+        </div>
     );
-}
+};
 export default StationModal;

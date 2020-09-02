@@ -28,8 +28,8 @@ const Station = (props) => {
     }
 
     return (
-                            //calls a function in the App.js file.
-        <div style={style} onClick={props.passFunction} className="z-depth-5">
+                            //calls openHandler in the App.js file.
+        <div style={style} onClick={props.passFunction}>
             <Card className="z-depth-5 h-100" bg="light">
                 <Card.Body>
                     <Card.Header as="h2">{props.name}</Card.Header>

@@ -4,3 +4,16 @@
   padding: 16px;
   text-align: center;
 }
+.Pager{
+  /*bottom margin change just moves it slightly closer to the station divs.*/
+  margin-bottom: 0;
+  display: block;
+  margin-left: 5px;
+
+}
+.PagerBackground{
+  display: flex;
+  float: none;
+  align-items: center;
+  justify-content: center;
+}
